@@ -47,10 +47,23 @@
       list-style-type: none;
       padding-left: 0;
     }
+    a {
+    color: #fff; /* Cor escura para o link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s, transform 0.3s; /* Efeito suave para a mudança */
+  }
 
-    ul li::before {
-      content: "✅ ";
-    }
+  a:hover {
+    color: #2980b9; /* Muda a cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do link */
+  }
+  p {
+    text-align: center; /* Centraliza o parágrafo */
+    font-size: 1.2em; /* Aumenta um pouco o tamanho da fonte */
+    margin-top: 20px; /* Espaçamento superior */
+  }
+    
 
     form {
       display: flex;
@@ -76,10 +89,6 @@
     button:hover {
       background-color: #1a242f;
     }
-
-    .info-extra {
-      margin-top: 10px;
-    }
   </style>
 </head>
 
@@ -87,32 +96,70 @@
   <header>
     <h1>João Vitor Santos Sant'Anna</h1>
     <p>Email: joao.sant@aluno.ifsp.edu.br</p>
-    <p>LinkedIn: linkedin.com/in/joaovitor</p>
+    <p><a href="https://www.linkedin.com/in/joao-vitor-santos-sant-anna-1999142a8/" target="_blank">LinkedIn</a></p>
   </header>
 
   <div class="container">
     <section>
-      <h2>Resumo Profissional</h2>
-      <p>Estudante do último ano do Ensino Médio com curso técnico em Informática no IFSP Cubatão. Atuo como Vice-Diretor de Esportes no grêmio Chico Mendes da escola, desenvolvendo habilidades de liderança, organização e trabalho em equipe. Busco oportunidades para aplicar meus conhecimentos em programação e ferramentas de produtividade.</p>
+      <h2>Objetivo</h2>
+      <p>Estágio na área de Tecnologia da Informação (TI), com foco em desenvolvimento de sistemas, suporte técnico ou infraestrutura, visando aplicar os conhecimentos adquiridos no curso técnico, contribuir com soluções tecnológicas e adquirir experiência prática no setor.</p>
+    </section>
+
+    <section>
+      <h2>Formação Acadêmica</h2>
+      <p><strong>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo – IFSP – Campus Cubatão</strong><br>
+      Ensino Médio Integrado ao Curso Técnico em Informática – Conclusão prevista: Dezembro/2025</p>
     </section>
 
     <section>
       <h2>Habilidades Técnicas</h2>
       <ul>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python (básico)</li>
-        <li>C#</li>
-        <li>SQL Server</li>
-        <li>Power BI (básico)</li>
-        <li>Pacote Office:
-          <ul class="info-extra">
-            <li>Word: formatação de textos, criação de documentos acadêmicos e profissionais.</li>
-            <li>Excel: fórmulas, funções, gráficos e tabelas dinâmicas.</li>
-            <li>PowerPoint: criação de apresentações organizadas e visuais.</li>
-            
+        <li><strong>Programação:</strong> Lógica de programação; desenvolvimento com Python (básico), Java, C#, HTML, CSS e JavaScript</li>
+        <li><strong>Banco de Dados:</strong> Fundamentos de SQL, modelagem relacional, uso de MySQL e SQL Server</li>
+        <li><strong>Sistemas Operacionais:</strong> Instalação e configuração de sistemas Windows e Linux</li>
+        <li><strong>Redes de Computadores:</strong> Noções de configuração de redes, endereçamento IP, cabeamento estruturado e topologias</li>
+        <li><strong>Manutenção de Computadores:</strong> Montagem, diagnóstico e manutenção de hardware e software</li>
+        <li><strong>Ferramentas de Produtividade:</strong>
+          <ul>
+            <li><strong>Pacote Office:</strong></li>
+            <ul>
+              <li>Word: formatação de textos, criação de documentos acadêmicos e profissionais</li>
+              <li>Excel: fórmulas, funções, gráficos e tabelas dinâmicas</li>
+              <li>PowerPoint: criação de apresentações organizadas e visuais</li>
+              <li>Outlook: uso de e-mails, organização de compromissos e gerenciamento de agenda</li>
+            </ul>
+            <li>Google Workspace, Trello, Visual Studio Code, Git/GitHub</li>
           </ul>
         </li>
+        <li><strong>Análise de Dados:</strong> Conhecimento básico em Power BI</li>
+        <li><strong>Metodologias Ágeis:</strong> Conceitos iniciais de Scrum e Kanban</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experiência Extracurricular</h2>
+      <p><strong>Vice-Diretor de Esportes – Grêmio Estudantil Chico Mendes – IFSP Cubatão (2025 – Atual)</strong></p>
+      <ul>
+        <li>Organização de eventos esportivos, gestão de equipes e logística</li>
+        <li>Desenvolvimento de habilidades em liderança, comunicação e trabalho colaborativo</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Habilidades Pessoais e Profissionais</h2>
+      <ul>
+        <li>Proatividade e facilidade de aprendizado</li>
+        <li>Boa comunicação e relacionamento interpessoal</li>
+        <li>Capacidade de trabalhar em equipe e sob orientação</li>
+        <li>Interesse contínuo por novas tecnologias e aprimoramento técnico</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Informações Adicionais</h2>
+      <ul>
+        <li>Disponibilidade para estágio no período matutino</li>
+        <li>Interesse especial em áreas como desenvolvimento de software, suporte técnico, análise de dados e redes</li>
       </ul>
     </section>
 
